@@ -1,23 +1,28 @@
 {
-    "name": "academe/laraveldkim",
-    "version": "1.0.4",
-    "license": "MIT",
-    "description": "A Laravel plugin to sign all outgoing emails using DKIM from within the application.",
-    "keywords": ["laravel", "dkim", "email", "spam"],
-    "homepage": "https://github.com/academe/laraveldkim",
-    "authors": [
-        {
-            "name": "Jason Judge",
-            "email": "jason.judge@academe.co.uk",
-            "homepage": "http://www.academe.co.uk/",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.0",
-        "laravel/framework": "4.*"
-    },
-    "autoload": {
-	"psr-4": {"Academe\\LaravelDkim\\": "src/"}
-    }
+	"name": "rapideinternet/laraveldkim",
+	"version": "1.0",
+	"license": "MIT",
+	"description": "A Laravel plugin to sign all outgoing emails using DKIM from within the application.",
+	"keywords": ["laravel", "dkim", "email", "spam"],
+	"homepage": "https://github.com/rapideinternet/laraveldkim",
+	"authors": [{
+		"name": "Lucas van der Have",
+		"email": "lucas@rapide.nl",
+		"homepage": "http://rapide.nl/",
+		"role": "Developer"
+	}, {
+		"name": "Jason Judge",
+		"email": "jason.judge@academe.co.uk",
+		"homepage": "http://www.academe.co.uk/",
+		"role": "Developer"
+	}],
+	"require": {
+		"php": ">=5.3.0",
+		"laravel/framework": "4.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Rapide\\LaravelDkim\\": "src/"
+		}
+	}
 }
