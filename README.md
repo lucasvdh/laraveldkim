@@ -3,7 +3,7 @@ Laravel 4 DKIM
 
 Sign all outgoing emails in Laravel 4 with a DKIM signature.
 
-Check out the "5.0" branch for Laravel 5.
+Check out the master branch for Laravel 5.
 
 How to Use
 ----------
