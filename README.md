@@ -5,27 +5,25 @@ Sign all outgoing emails in Laravel 5 with a DKIM signature.
 
 Check out the 4.0 branch for Laravel 4 support.
 
-How to Use
+Getting started
 ----------
-
-Steps are:
-
-* Include the package in your application.
-* Add your private key settings.
-* Use the new mailer.
+1. [Include the package in your application](#include-the-package-in-your-application)
+2. [Add your private key settings](#add-your-private-key-setting)
+3. [Use the new mailer](#user-the-new-mailer)
 
 Include the package in your application
 ---------------------------------------
 
-Add a requirement to your project's composer.json
+``` bash
+$ composer require rapideinternet/laraveldkim:5.*
+```
+Or add a requirement to your project's composer.json
 
-    "require": {
-        "rapideinternet/laraveldkim": "5.*"
-    },
-
-Or
-
-	$ composer require rapideinternet/laraveldkim:5.*
+``` javascript
+"require": {
+	"rapideinternet/laraveldkim": "5.*"
+},
+```
 
 Add your private key settings
 -----------------------------
@@ -33,17 +31,18 @@ Add your private key settings
 Your signing key details need to be added to the laravel application config. Add the following to your
 `mail.php` config file:
 
-
-    'dkim' => array(
-        'private_key' => <<<ENDDKIMKEY
-    -----BEGIN RSA PRIVATE KEY-----
-    ...your key goes in here...
-    -----END RSA PRIVATE KEY-----
-    ENDDKIMKEY
-        ,
-        'domain_name' => 'example.com',
-        'selector' => 'dkim',
-    ),
+``` php
+'dkim' => array(
+    'private_key' => <<<ENDDKIMKEY
+-----BEGIN RSA PRIVATE KEY-----
+...your key goes in here...
+-----END RSA PRIVATE KEY-----
+ENDDKIMKEY
+    ,
+    'domain_name' => 'example.com',
+    'selector' => 'dkim',
+),
+```
 
 
 Note that everything between the two instances of `ENDDKIMKEY` must be right up to the start of the line.
