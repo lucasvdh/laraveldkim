@@ -78,7 +78,10 @@ Comment that out and replace it with this entry:
 
     'Rapide\LaravelDkim\MailServiceProvider',
 
-That's it. Your emails should now be signed with DKIM. You can check the headers in the source of emails that
+That's it
+---------
+
+Your emails should now be signed with DKIM. You can check the headers in the source of emails that
 your application sends out and you should see the DKIM signature in there. It will look something like this:
 
     DKIM-Signature: v=1; a=rsa-sha1; bh=Gwuoen3CG+KClMvlMKjUh1ZJmzg=;
@@ -87,6 +90,9 @@ your application sends out and you should see the DKIM signature in there. It wi
     b=cIkL/FZ6/v/XUdcYvhvmSo9abedf0DLlM/LYkOX4GoW4EUzPxN10hOHQpWlqjeDa2YdsI7GH
     dGCc16Xgb2kpZbPEom0RMv62G4SYf8763abb7380ebMRP2tv0/Mq+CaOmQejk34vlBnzcj0JE
     6PGOPxEEe9dgdoOMx4uEhhlkd=
+
+Background
+==========
 
 Why would you use this?
 -----------------------
