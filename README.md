@@ -71,11 +71,15 @@ in your application.
 
 The `providers` array will have this entry:
 
-    'Illuminate\Mail\MailServiceProvider',
+``` php
+'Illuminate\Mail\MailServiceProvider',
+```
 
 Comment that out and replace it with this entry:
 
-    'Rapide\LaravelDkim\MailServiceProvider',
+``` php
+'Rapide\LaravelDkim\MailServiceProvider',
+```
 
 That's it
 ---------
