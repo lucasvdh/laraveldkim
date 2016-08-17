@@ -1,5 +1,5 @@
 Laravel 5 DKIM
-===========
+==============
 
 Sign all outgoing emails in Laravel 5 with a DKIM signature.
 
