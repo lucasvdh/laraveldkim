@@ -8,8 +8,8 @@ Check out the 4.0 branch for Laravel 4 support.
 Getting started
 ----------
 1. [Include the package in your application](#include-the-package-in-your-application)
-2. [Add your private key settings](#add-your-private-key-setting)
-3. [Use the new mailer](#user-the-new-mailer)
+2. [Add your private key settings](#add-your-private-key-settings)
+3. [Use the new mailer](#use-the-new-mailer)
 
 Include the package in your application
 ---------------------------------------
