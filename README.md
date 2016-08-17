@@ -25,7 +25,7 @@ Add a requirement to your project's composer.json
 
 Or
 
-		$ composer require rapideinternet/laraveldkim:4.*
+	$ composer require rapideinternet/laraveldkim:4.*
 
 Add your private key settings
 -----------------------------
