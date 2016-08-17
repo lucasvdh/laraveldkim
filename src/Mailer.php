@@ -1,4 +1,4 @@
-<?php namespace Academe\LaravelDkim;
+<?php namespace Rapide\LaravelDkim;
 
 use Illuminate\Mail\Message;
 use Illuminate\Mail\Mailer as CoreMailer;
@@ -6,7 +6,8 @@ use Swift_SignedMessage;
 use Swift_Signers_DKIMSigner;
 use Config;
 
-class Mailer extends CoreMailer {
+class Mailer extends CoreMailer
+{
 	/**
 	 * Create a new message instance.
 	 *
@@ -35,7 +36,7 @@ class Mailer extends CoreMailer {
 			if (!empty($private_key) && !empty($domain_name)) {
 				// Do the DKIM signing.
 				$dkim_signer = new Swift_Signers_DKIMSigner($private_key, $domain_name, $selector);
-				
+
 				// Issue #1: ignore certain headers that cause end-to-end failure.
 				$dkim_signer->ignoreHeader('Return-Path');
 				$dkim_signer->ignoreHeader('Bcc');
@@ -44,7 +45,7 @@ class Mailer extends CoreMailer {
 				$dkim_signer->ignoreHeader('Comments');
 				$dkim_signer->ignoreHeader('Keywords');
 				$dkim_signer->ignoreHeader('Resent-Bcc');
-				
+
 				$message->attachSigner($dkim_signer);
 			}
 		} else {

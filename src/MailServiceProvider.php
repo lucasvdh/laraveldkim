@@ -1,4 +1,4 @@
-<?php namespace Academe\LaravelDkim;
+<?php namespace Rapide\LaravelDkim;
 
 /**
  * Notes:
@@ -17,7 +17,8 @@
 
 use Illuminate\Mail\MailServiceProvider as CoreMailServiceProvider;
 
-class MailServiceProvider extends CoreMailServiceProvider {
+class MailServiceProvider extends CoreMailServiceProvider
+{
 	/**
 	 * Register the service provider.
 	 *
