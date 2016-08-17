@@ -1,9 +1,9 @@
-Laravel 4 DKIM
+Laravel 5 DKIM
 ===========
 
-Sign all outgoing emails in Laravel 4 with a DKIM signature.
+Sign all outgoing emails in Laravel 5 with a DKIM signature.
 
-Check out the master branch for Laravel 5.
+Check out the 4.0 branch for Laravel 4 support.
 
 How to Use
 ----------
@@ -20,12 +20,12 @@ Include the package in your application
 Add a requirement to your project's composer.json
 
     "require": {
-        "rapideinternet/laraveldkim": "4.*"
+        "rapideinternet/laraveldkim": "5.*"
     },
 
 Or
 
-	$ composer require rapideinternet/laraveldkim:4.*
+	$ composer require rapideinternet/laraveldkim:5.*
 
 Add your private key settings
 -----------------------------
