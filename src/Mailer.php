@@ -1,4 +1,4 @@
-<?php namespace Rapide\LaravelDkim;
+<?php namespace Lucasvdh\LaravelDkim;
 
 use Config;
 use Swift_Message;

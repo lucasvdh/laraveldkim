@@ -15,13 +15,13 @@ Include the package in your application
 ---------------------------------------
 
 ``` bash
-$ composer require rapideinternet/laraveldkim:5.*
+$ composer require lucasvdh/laraveldkim:5.*
 ```
 Or add a requirement to your project's composer.json
 
 ``` javascript
 "require": {
-	"rapideinternet/laraveldkim": "5.*"
+	"lucasvdh/laraveldkim": "5.*"
 },
 ```
 
@@ -78,7 +78,7 @@ The `providers` array will have this entry:
 Comment that out and replace it with this entry:
 
 ``` php
-'Rapide\LaravelDkim\MailServiceProvider',
+'Lucasvdh\LaravelDkim\MailServiceProvider',
 ```
 
 That's it
