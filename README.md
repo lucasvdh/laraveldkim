@@ -1,3 +1,5 @@
+Packagist support will be back soon.
+
 Laravel 5 DKIM
 ==============
 
