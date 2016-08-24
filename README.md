@@ -1,5 +1,3 @@
-Packagist support will be back soon.
-
 Laravel 5 DKIM
 ==============
 
@@ -17,13 +15,13 @@ Include the package in your application
 ---------------------------------------
 
 ``` bash
-$ composer require lucasvdh/laraveldkim:5.*
+$ composer require rapideinternet/laraveldkim:dev-master
 ```
 Or add a requirement to your project's composer.json
 
 ``` javascript
 "require": {
-	"lucasvdh/laraveldkim": "5.*"
+	"rapideinternet/laraveldkim": "dev-master"
 },
 ```
 
