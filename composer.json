@@ -22,7 +22,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"Rapide\\LaravelDkim\\": "src/"
+			"Lucasvdh\\LaravelDkim\\": "src/"
 		}
 	}
 }
